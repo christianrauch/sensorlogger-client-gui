@@ -15,6 +15,17 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    config.h \
+    connection.h
 
 FORMS    += mainwindow.ui
+
+unix: CONFIG += link_pkgconfig
+unix: PKGCONFIG += glib-2.0
+
+unix: CONFIG += c++11
+
+unix:!macx: LIBS += -lthrift
+
+unix:!macx: LIBS += -lsensor_logger_communication
