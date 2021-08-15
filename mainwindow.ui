@@ -21,7 +21,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="empty"/>
       <widget class="QWidget" name="connection_edit">
@@ -86,13 +86,55 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="select_setting">
+      <widget class="QWidget" name="setting_name_file">
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>140</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Choose name and file</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="setting_name_edit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>61</y>
+          <width>559</width>
+          <height>33</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>basement</string>
+        </property>
+        <property name="placeholderText">
+         <string>setting</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="choose_image">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>100</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Select Image</string>
+        </property>
+       </widget>
        <widget class="QLabel" name="label_3">
         <property name="geometry">
          <rect>
-          <x>130</x>
-          <y>60</y>
-          <width>211</width>
+          <x>0</x>
+          <y>10</y>
+          <width>559</width>
           <height>21</height>
          </rect>
         </property>
@@ -100,6 +142,57 @@
          <string>connection established</string>
         </property>
        </widget>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>251</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Preview of image:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="set_setting">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>200</y>
+          <width>96</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Set</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="add_sensors">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>20</y>
+          <width>256</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="select_setting">
+       <layout class="QVBoxLayout" name="verticalLayout_2"/>
       </widget>
      </widget>
     </item>

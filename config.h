@@ -40,7 +40,8 @@ public:
 
     void setDefaultConfig() {
         std::cout<<"setting default config"<<std::endl;
-        g_key_file_set_string(cfg, "connection", "host", "localhost");
+        //g_key_file_set_string(cfg, "connection", "host", "localhost");
+        g_key_file_set_string(cfg, "connection", "host", "debian");
         g_key_file_set_integer(cfg, "connection", "port", 9090);
         emit defaultConfigSet();
     }
